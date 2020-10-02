@@ -1,0 +1,15 @@
+label {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.estilo-descuento {
+  color: green;
+}
+
+.estilo-recargo {
+  color: red;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase 34</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section>
+ <h2>Opciones de pago</h2>
+
+ <form>
+<!-- // no hace nada -->
+  <label>Efectivo / Débito
+  <input  class="opcionesDePago" id="efectivo" type="radio" name="forma-de-pago">
+</label>
+
+<!-- aumenta un 10% la compra  -->
+<label>Tarjeta de crédito
+  <input  class="opcionesDePago" id="credito" type="radio" name="forma-de-pago">
+</label>
+
+<!-- aumenta 50 la compra -->
+<label>Necesito envío
+  <input class="opcionesDePago" id="envioCheck" type="checkbox" name="envio">
+</label>
+
+<!-- descuenta 10% de la compra -->
+<label>Tengo tarjeta de descuento
+  <input class="opcionesDePago" id="descuentoCheck" type="checkbox" name="descuento">
+</label>
+
+</form>
+
+<div class="subtotal">
+  <h4>Subtotal: <span data-precio="5540" id="subtotal">0</span></h4>
+  <h4 class="renglon-recargo estilo-recargo hidden">Recargo: <span id="recargo">0</span></h4>
+  <h4 class="renglon-descuento estilo-descuento hidden">Descuento: <span id="descuento">0</span></h4>
+  <h4 class="renglon-envio hidden">Envio: <span id="envio">0</span></h4>
+
+  <h3>Total: <span id="total">0</span></h3>
+
+</div>
+
+
+
+</section>
+  
+  <script src="index.js"></script>
+</body>
+</html>
